@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#11131C" />
+  <title>Mi espacio · Alma Astral</title>
+  <meta name="description" content="Tu espacio personal Alma Astral para explorar, comprender, elegir e integrar." />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body class="app-body">
+
+  <aside class="sidebar" id="sidebar">
+    <a class="sidebar-brand" href="#inicio" aria-label="Alma Astral">
+      <img src="assets/logo-original.jpeg" alt="Alma Astral · Coaching Astrológico" />
+    </a>
+
+    <div class="brand-divider" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+
+    <nav class="side-nav" aria-label="Navegación principal">
+      <a class="side-link active" href="#inicio" data-section="inicio">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>
+        </span>
+        <span>Inicio</span>
+      </a>
+
+      <a class="side-link" href="#espacio" data-section="espacio">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c.7-4.3 3.1-6.5 7.5-6.5S18.8 16.7 19.5 21"/></svg>
+        </span>
+        <span>Tu Espacio</span>
+      </a>
+
+      <a class="side-link" href="#experiencias" data-section="experiencias">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l1.4 5.2L18 10l-4.6 2.8L12 18l-1.4-5.2L6 10l4.6-2.8L12 2Z"/><path d="M19 3v4M21 5h-4"/></svg>
+        </span>
+        <span>Experiencias</span>
+      </a>
+
+      <a class="side-link" href="#pasaporte" data-section="pasaporte">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="2.8"/><path d="M9 16h6"/></svg>
+        </span>
+        <span>Tu Pasaporte</span>
+      </a>
+
+      <a class="side-link" href="#bitacora" data-section="bitacora">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        </span>
+        <span>Bitácora</span>
+      </a>
+
+      <a class="side-link" href="#recursos" data-section="recursos">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21V10"/><path d="M12 13c-4.5 0-7-2.2-7-6 4.5 0 7 2.2 7 6Z"/><path d="M12 10c0-4 2.5-6.5 7-6.5 0 4-2.5 6.5-7 6.5Z"/></svg>
+        </span>
+        <span>Recursos</span>
+      </a>
+
+      <a class="side-link" href="#perfil" data-section="perfil">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.5"/><path d="M5 21c.5-4.6 2.8-7 7-7s6.5 2.4 7 7"/></svg>
+        </span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-quote">
+      <div class="quote-divider"><span></span><b>✦</b><span></span></div>
+      <p>El crecimiento<br />no termina, solo<br />cambia de paisaje.</p>
+    </div>
+  </aside>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <div class="app-shell">
+    <header class="app-header">
+      <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <div class="welcome-copy">
+        <h1>Hola, <span id="userFirstName">Navegante</span> <span class="hello-heart">♥</span></h1>
+        <p>Este es tu espacio. Navega tu vida con intención.</p>
+      </div>
+
+      <div class="header-actions">
+        <button class="icon-button notification-button" aria-label="Notificaciones">
+          <svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 7h18s-3 0-3-7"/><path d="M10 20h4"/></svg>
+          <span class="notification-dot"></span>
+        </button>
+        <button class="profile-button" id="profileButton" aria-label="Abrir perfil">
+          <span id="avatar">A</span>
+        </button>
+        <button class="icon-button logout-button" id="logoutBtn" aria-label="Cerrar sesión">
+          <svg viewBox="0 0 24 24"><path d="M9 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section class="hero-card reveal" id="inicio">
+        <div class="hero-art" aria-hidden="true">
+          <div class="moon-frame">
+            <img src="assets/hero-moon-realistic.jpg" alt="" />
+          </div>
+          <span class="hero-star star-a">✦</span>
+          <span class="hero-star star-b">✦</span>
+          <span class="hero-star star-c">·</span>
+        </div>
+
+        <div class="hero-copy">
+          <span class="quote-glyph">“</span>
+          <blockquote>
+            <em>La persona</em> siempre<br />
+            es más importante<br />
+            que la herramienta.
+          </blockquote>
+
+          <div class="gold-rule" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+
+          <p>Aquí combinamos astrología, conciencia y acompañamiento para que tomes decisiones desde tu verdad y construyas la vida que quieres vivir.</p>
+        </div>
+
+        <div class="hero-meta">
+          <article>
+            <span class="meta-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div><small>DURACIÓN</small><strong>45–60 min</strong></div>
+          </article>
+          <article>
+            <span class="meta-icon">
+              <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg>
+            </span>
+            <div><small>FORMATO</small><strong>Online</strong></div>
+          </article>
+          <article>
+            <span class="meta-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 21V10"/><path d="M12 13c-4.5 0-7-2.2-7-6 4.5 0 7 2.2 7 6Z"/><path d="M12 10c0-4 2.5-6.5 7-6.5 0 4-2.5 6.5-7 6.5Z"/></svg>
+            </span>
+            <div><small>ENFOQUE</small><strong>Evolutivo</strong></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="explore-section reveal" id="espacio">
+        <div class="section-heading compact">
+          <div>
+            <h2>¿Qué quieres explorar hoy?</h2>
+            <p>Elige tu intención y recibe guía para este momento de tu camino.</p>
+          </div>
+          <button class="text-link" id="showAllIntentions">Ver todas <span>›</span></button>
+        </div>
+
+        <div class="intention-grid">
+          <button class="intention-card" data-intention="Entender mi propósito">
+            <span class="intention-icon purple">
+              <svg viewBox="0 0 24 24"><path d="M12 2l1.5 6.5L20 10l-6.5 1.5L12 18l-1.5-6.5L4 10l6.5-1.5L12 2Z"/></svg>
+            </span>
+            <span><strong>Entender mi propósito</strong><small>Quiero claridad sobre mi camino y mi misión.</small></span><b>›</b>
+          </button>
+
+          <button class="intention-card" data-intention="Tomar una decisión importante">
+            <span class="intention-icon gold">
+              <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+            </span>
+            <span><strong>Tomar una decisión importante</strong><small>Necesito ver con más claridad mis opciones.</small></span><b>›</b>
+          </button>
+
+          <button class="intention-card" data-intention="Sanar y soltar">
+            <span class="intention-icon purple">
+              <svg viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 9 9 0 1 0 20.5 14.5Z"/></svg>
+            </span>
+            <span><strong>Sanar y soltar</strong><small>Deseo soltar lo que ya no me permite avanzar.</small></span><b>›</b>
+          </button>
+
+          <button class="intention-card" data-intention="Manifestar y crear">
+            <span class="intention-icon gold">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.9 4.9 7 7M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1"/></svg>
+            </span>
+            <span><strong>Manifestar y crear</strong><small>Quiero alinear mis sueños con acciones concretas.</small></span><b>›</b>
+          </button>
+        </div>
+        <div class="intention-feedback" id="intentionFeedback" role="status"></div>
+      </section>
+
+      <section class="content-section reveal" id="experiencias">
+        <div class="section-heading">
+          <div><span class="eyebrow">Experiencias</span><h2>Empieza por lo que más resuena contigo.</h2></div>
+          <span class="section-note">Sin respuestas prefabricadas.</span>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card featured">
+            <span class="card-tag">RECOMENDADA</span>
+            <h3>Encuentro Tu Esencia</h3>
+            <p>Una conversación personalizada para explorar tu mapa natal desde una mirada evolutiva y humana.</p>
+            <button class="primary-action" data-modal="essenceModal">Preparar mi encuentro <span>→</span></button>
+          </article>
+          <article class="experience-card"><h3>Astrocartografía</h3><p>Explora cómo distintos lugares pueden activar temas y experiencias en tu recorrido.</p><button class="secondary-action">Conocer más</button></article>
+          <article class="experience-card"><h3>Ciclos de Vida</h3><p>Comprende el momento que estás atravesando y qué preguntas puede ser útil hacerte ahora.</p><button class="secondary-action">Conocer más</button></article>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="pasaporte">
+        <div class="section-heading"><div><span class="eyebrow">Tu Pasaporte</span><h2>Tu recorrido, no una colección de servicios.</h2></div></div>
+        <div class="passport-card">
+          <div class="passport-id"><span class="passport-avatar" id="passportAvatar">A</span><div><small>NAVEGANTE</small><strong id="passportName">Alma Astral</strong><span id="passportEmail">—</span></div></div>
+          <div class="passport-route"><div class="route-step active"><b>01</b><span>Explorar</span></div><i></i><div class="route-step"><b>02</b><span>Comprender</span></div><i></i><div class="route-step"><b>03</b><span>Elegir</span></div><i></i><div class="route-step"><b>04</b><span>Integrar</span></div></div>
+          <p class="passport-note">Tu Pasaporte irá guardando aprendizajes, decisiones e integraciones importantes de tu camino.</p>
+        </div>
+      </section>
+
+      <section class="content-section reveal" id="bitacora">
+        <div class="section-heading"><div><span class="eyebrow">Bitácora</span><h2>Una idea que quieras recordar.</h2></div></div>
+        <div class="journal-card"><textarea id="journalEntry" placeholder="Hoy estoy observando que..."></textarea><div><span id="journalStatus"></span><button class="primary-action" id="saveJournal">Guardar en mi bitácora</button></div></div>
+      </section>
+
+      <section class="content-section reveal" id="recursos">
+        <div class="section-heading"><div><span class="eyebrow">Recursos</span><h2>Pequeñas herramientas para seguir explorando.</h2></div></div>
+        <div class="resource-grid">
+          <article><span>01</span><h3>Preguntas de integración</h3><p>Preguntas breves para traducir una idea a tu vida cotidiana.</p></article>
+          <article><span>02</span><h3>Ciclos personales</h3><p>Una introducción sencilla para observar momentos de cambio sin determinismo.</p></article>
+          <article><span>03</span><h3>Cuaderno de Esencia</h3><p>Tu espacio para guardar síntesis y reflexiones después de cada encuentro.</p></article>
+        </div>
+      </section>
+
+      <section class="content-section profile-section reveal" id="perfil">
+        <div class="section-heading"><div><span class="eyebrow">Perfil</span><h2>Tu espacio personal.</h2></div></div>
+        <div class="profile-card"><span class="profile-large-avatar" id="profileAvatar">A</span><div><strong id="profileName">Navegante</strong><span id="profileEmail">—</span><small>La autenticación real llegará con Supabase. Este prototipo usa almacenamiento local.</small></div></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="essenceModal" aria-hidden="true">
+    <div class="modal-card glass">
+      <button class="modal-close" data-close="essenceModal">×</button>
+      <span class="eyebrow">Encuentro Tu Esencia</span>
+      <h2>Prepárate para tu encuentro.</h2>
+      <p>Este formulario es visual por ahora. Más adelante estos datos podrán guardarse de forma segura en Supabase.</p>
+      <label class="field"><span>¿Qué te gustaría comprender mejor?</span><textarea id="essenceQuestion" placeholder="Cuéntanos qué estás viviendo o qué quieres explorar..."></textarea></label>
+      <label class="field"><span>Fecha de nacimiento</span><input type="date" id="birthDate" /></label>
+      <button class="primary-action full" id="saveEssence">Guardar preparación</button>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
