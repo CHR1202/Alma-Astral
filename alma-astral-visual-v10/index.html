@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1B1C24" />
+  <title>Alma Astral · Tu espacio personal</title>
+  <meta name="description" content="Alma Astral. Un espacio personal para explorar, comprender, elegir e integrar con mayor intención." />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body class="auth-body">
+  <main class="auth-shell">
+    <section class="auth-scene" aria-label="Bienvenida a Alma Astral">
+      <img class="scene-logo" src="assets/moon-hero.jpeg" alt="" aria-hidden="true" />
+      <div class="scene-vignette"></div>
+      <div class="scene-copy">
+        <span class="eyebrow">Navega tu vida con intención</span>
+        <h1>Un espacio para volver a ti.</h1>
+        <p>Explora lo que estás viviendo, comprende nuevas perspectivas y convierte la claridad en elecciones conscientes.</p>
+        <div class="principles" aria-label="Método Alma Astral">
+          <span>Explorar</span><i></i><span>Comprender</span><i></i><span>Elegir</span><i></i><span>Integrar</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <form class="auth-card glass" id="loginForm">
+        <div class="auth-brand-mobile">
+          <img src="assets/logo.jpeg" alt="" aria-hidden="true" />
+          <span>ALMA ASTRAL</span>
+        </div>
+
+        <span class="eyebrow">Tu espacio personal</span>
+        <h2>Bienvenida/o.</h2>
+        <p class="muted">Aquí no venimos a decirte quién eres. Venimos a abrir preguntas que te ayuden a comprenderte mejor.</p>
+
+        <label class="field">
+          <span>Tu nombre</span>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="¿Cómo quieres que te llamemos?" required />
+        </label>
+
+        <label class="field">
+          <span>Correo electrónico</span>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required />
+        </label>
+
+        <label class="field">
+          <span>Contraseña</span>
+          <input id="password" name="password" type="password" minlength="4" placeholder="••••••••" required />
+        </label>
+
+        <button class="btn btn-gold btn-full" type="submit">Entrar a mi espacio <span>→</span></button>
+        <button class="btn btn-ghost btn-full" id="demoBtn" type="button">Explorar una cuenta demo</button>
+
+        <p class="privacy-note"><strong>Prototipo visual.</strong> Todavía no hay autenticación real; no uses una contraseña que utilices en otros sitios.</p>
+      </form>
+    </section>
+  </main>
+  <script src="js/auth.js" defer></script>
+</body>
+</html>
